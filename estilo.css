@@ -37,7 +37,7 @@ a.bttn-dark {
   height: 200px;
   font-size: 40px;
   text-align: center;
-align-items: center;}
+}
 a.bttn-dark:hover {
   color: #fff;
   font-size: 60px;
@@ -51,7 +51,7 @@ a.bttn-dark:focus {
 .flex {
   display: flex;
   flex-direction: row;
-  margin-top: 13%;
+
   min-height: 20vh;
   display: flex;
 
@@ -59,38 +59,12 @@ a.bttn-dark:focus {
   justify-content: center;
 
 }
-.bttn:before {
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: "";
-  background-color: #ff0072;
-  z-index: -2;
-}
-.bttn:hover:before {
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
-.bttn:focus:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
 
 .bttn-dark {
   font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  display: inline-block;
+ 
   text-align: center;
   width: 270px;
   font-weight: bold;
@@ -105,7 +79,7 @@ a.bttn-dark:focus {
 .bttn-dark:before {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
-  position: absolute;
+
   top: 0;
   left: 50%;
   right: 50%;
@@ -128,4 +102,72 @@ a.bttn-dark:focus {
   left: 0;
   right: 0;
   opacity: 1;
+}
+.bttn {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+ 
+  text-align: center;
+  width: 270px;
+  font-weight: bold;
+  padding: 14px 0px;
+  border: 3px solid #d4862c;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+
+}
+.bttn:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #d4862c;
+  z-index: -1;
+}
+.bttn:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.bttn:focus:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+a.bttn {
+  color: #d4862c;
+  text-decoration: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+  width: 600px;
+  height: 200px;
+  font-size: 40px;
+  text-align: center;
+}
+a.bttn:hover {
+  color: #fff;
+  font-size: 60px;
+}
+a.bttn:focus {
+  color: #fff;
+  font-size: 65px;
+}
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20%;
 }
